@@ -1,0 +1,250 @@
+
+#cover {
+  display: none;
+}
+
+#cover,.background {
+  position: absolute;
+}
+
+/* common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 3vh;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html, body, section {
+  height: 100%;
+  overflow: hidden;
+}
+
+.button:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: color .4s;
+}
+
+.background {
+  background: url("http://qukufile2.qianqian.com/data2/pic/aded9221e66f24915f7d299269d4c9e9/73072/73072.jpg@s_1,w_300,h_300") center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(4px);
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.4);
+}
+
+@media (min-width: 700px) {
+  .layout {
+    width: 600px;
+  }
+}
+@media (min-width: 900px) {
+  .layout {
+    width: 800px;
+  }
+}
+@media (min-width: 1000px) {
+  .layout {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .layout {
+    width: 1100px;
+  }
+}
+
+/*panel*/
+
+#panel main {
+  height: calc(100% - 24vh);
+  margin: 0 auto;
+  display: flex;
+  padding-top: 12vh;
+}
+
+.aside .buttons {
+  margin-top: 6vh;
+  display: flex;
+  text-align: center;
+  font-size: 5vh;
+  color: rgb(181,181,187);
+}
+
+.btn-love.active {
+  color: red;
+}
+
+.aside figure {
+  width: 46vh;
+  height: 46vh;
+  background-image: url("http://qukufile2.qianqian.com/data2/pic/aded9221e66f24915f7d299269d4c9e9/73072/73072.jpg@s_1,w_300,h_300");
+  background-size: cover;
+}
+
+#panel .detail {
+  flex: 1;
+  margin-left: 12vh;
+}
+
+.detail .tab {
+  font-size: 2vh;
+  padding: .8vh 1.6vh;
+  background-color: rgb(77,77,77);
+  border-radius: 2px 2px;
+}
+
+.detail h3 {
+  font-size: 5.5vh;
+  margin-top: 2vh;
+  font-weight: 400;
+}
+
+.detail .icons {
+  display: flex;
+  font-size: 3vh;
+  margin-top: 12vh;
+}
+.icons>span {
+  flex: 1;
+}
+
+.detail .iconfont {
+  padding-right: .8vh;
+}
+.detail .progress {
+  display: flex;
+  margin-top: 10vh;
+  align-items: center;
+}
+
+.progress .bar {
+  flex: 1;
+  background-color: rgb(70,70,70);
+  height: .8vh;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar-progress {
+  height: .8vh;
+  background-color: rgb(184,37,37);
+  position: absolute;
+  transition: width .8s;
+}
+
+.progress .currentTime {
+  width: 3vh;
+  font-size: 2vh;
+  margin-left: 1vh;
+}
+
+.detail .author {
+  color: #ccc;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+}
+
+.detail .lyric {
+  font-size: 3vh;
+  margin-top: 5vh;
+}
+
+
+
+
+/*footer*/
+
+footer {
+  height: 24vh;
+  background: rgba(255,255,255,.2);
+  box-shadow: 0px -0.25vh 0.25vh 0.25vh rgba(255,255,255,0.2);
+  position: relative;
+}
+
+footer .layout {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+footer .iconfont {
+  position: absolute;
+  font-size: 9vh;
+  color: rgb(181,181,187);
+}
+
+.icon-left {
+  left: 10vh;
+  top: 6.5vh;
+}
+
+.icon-right {
+  right: 10vh;
+  top: 6.5vh;
+}
+
+footer .box {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+footer .item {
+  width: 20vh;
+  height: 20vh;
+  margin: 3vh 2vh 0 2vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer .cover {
+  background-size: cover;
+  background-position: center center;
+  height: 16vh; 
+}
+
+footer h3 {
+  font-size: 2vh;
+  color: rgba(255,255,255,.6);
+  margin-top: 1vh;
+  font-weight: 500;
+}
+
+footer .item:hover, .item.active {
+  box-shadow: 0 0 .5vh .5vh rgba(255,255,255,.8);
+}
+
