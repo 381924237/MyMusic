@@ -120,7 +120,7 @@ let Fm = {
     this.bind()
 
     EventCenter.fire('select-album',{
-      channelId: '11',
+      channelId: 'public_tuijian_suibiantingting',
       channelName: '随便听听'
     })
   },
