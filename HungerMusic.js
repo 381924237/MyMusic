@@ -184,7 +184,7 @@ let Fm = {
     if(this.channelId === '0'){
       this.loadCollection()
     }else{
-      $.getJSON('//api.jirengu.com/fm/getSong.php',{channel:this.channelId})
+      $.getJSON('//jirenguapi.applinzi.com/fm/getSong.php',{channel:this.channelId})
       .done((ret)=>{
         this.song = ret.song[0]
         // console.log(this.song)
@@ -216,7 +216,7 @@ let Fm = {
     this.loadLyric(song)
   },
   loadLyric(song){
-    $.getJSON('//api.jirengu.com/fm/getLyric.php',{sid:song.sid})
+    $.getJSON('//jirenguapi.applinzi.com/fm/getLyric.php',{sid:song.sid})
     .done((ret)=>{
       let lyric = ret.lyric
       // window.lyric = ret.lyric
