@@ -1,4 +1,4 @@
-# MyMusic
+# [MyMusic](https://381924237.github.io/MyMusic/HungerMusic.html)
 
 # 功能介绍
 
